@@ -24,9 +24,8 @@ public class VerifyMainPage {
         columnsFragment = new ColumnsFragment();
     }
 
-    @Step()
     @Test
-    public void verifyMainPage() throws InterruptedException {
+    public void verifyMainPage() {
         mainPage.visit();
 
         assertThat(headerFragment.isVisible()).isTrue();
